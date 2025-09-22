@@ -9,7 +9,7 @@ export default function SectionCard({ title, children, initialOpen = false }) {
 
   return (
     <div className="bg-white shadow-md rounded-2xl p-4 mb-6">
-      {/* Title + Toggle */}
+      {/* Title */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex justify-between items-center w-full text-left"
@@ -22,7 +22,7 @@ export default function SectionCard({ title, children, initialOpen = false }) {
         )}
       </button>
 
-      {/* Animated Content */}
+      {/* Animation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

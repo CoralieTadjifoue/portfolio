@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/NavBar";
-import Intro from "./components/Intro";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
@@ -10,7 +10,7 @@ function App() {
     <div className="font-sans text-gray-900">
       <Navbar />
       <div className="pt-16">
-      <Intro />
+      <Home />
       <About />
       <Projects />
       </div>

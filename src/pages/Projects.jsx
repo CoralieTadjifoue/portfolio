@@ -3,9 +3,9 @@ import ProjectCard from "../components/ProjectCard.jsx";
 const projects = [
   { title: "Portfolio", description: "My personal website built with React and Tailwind", tech: ["React", "Tailwind"], github: "#" },
   { title: "ARD App", description: "Security badge management tool in C#/.NET", tech: ["C#", ".NET"], github: "#" },
-  { title: "Drone Delivery App", description: "Python project for medication delivery with drones", tech: ["Kotlin", "Android Studio"],  github: "#" },
+  { title: "Drone Delivery App", description: "Kotlin project for medication delivery with drones", tech: ["Kotlin", "Android Studio"],  github: "#" },
   { title: "Multiplayer Naval Battle Game", description: "", tech: ["Java", "REST API", "Swagger"],  github: "#" },
-  { title: "Criptography Game", description: "", tech: ["Python", "Pygame"],  github: "#" },
+  { title: "Cryptography Game", description: "", tech: ["Python", "Pygame"],  github: "#" },
 ];
 
 const Projects = () => {
