@@ -1,11 +1,42 @@
 import ProjectCard from "../components/ProjectCard.jsx";
 
-const projects = [
-  { title: "Portfolio", description: "My personal website built with React and Tailwind", tech: ["React", "Tailwind"], github: "#" },
-  { title: "ARD App", description: "Security badge management tool in C#/.NET", tech: ["C#", ".NET"], github: "#" },
-  { title: "Drone Delivery App", description: "Kotlin project for medication delivery with drones", tech: ["Kotlin", "Android Studio"],  github: "#" },
-  { title: "Multiplayer Naval Battle Game", description: "", tech: ["Java", "REST API", "Swagger"],  github: "#" },
-  { title: "Cryptography Game", description: "", tech: ["Python", "Pygame"],  github: "#" },
+export const projects = [
+  { title: "Portfolio", 
+    id:"portfolio", 
+    description: "My personal website built with React and Tailwind", 
+    tech: ["React", "Tailwind"], 
+    github: "#" 
+  },
+  { title: "ARD App", 
+    id: "ard", 
+    description: "Security badge management tool in C#/.NET", 
+    tech: ["C#", ".NET", "WPF", "LINQ", "SonarQube"], 
+    github: "#" ,
+    screenshots: [
+  { src: "/screenshots/ard_1.png", description: "Dashboard view" },
+  { src: "/screenshots/ard_2.png", description: "Badge validation screen" },
+  { src: "/screenshots/ard_3.png", description: "Reports page" },
+  { src: "/screenshots/ard_4.png", description: "User settings" },
+  { src: "/screenshots/ard_5.png", description: "Analytics dashboard" },
+]
+  },
+  { title: "Drone Delivery App", 
+    id:"delivery_app", 
+    description: "Kotlin project for medication delivery with drones", 
+    tech: ["Kotlin", "Android Studio"],  
+    github: "#" 
+  },
+  { title: "Multiplayer Naval Battle Game", 
+    id:"naval_battle_game", 
+    description: "", 
+    tech: ["Java", "REST API", "Swagger"],  
+    github: "#" },
+  { title: "Cryptography Game", 
+    id:"crypto_game",
+    description: "", 
+    tech: ["Python", "Pygame"],  
+    github: "#" 
+  },
 ];
 
 const Projects = () => {

@@ -1,22 +1,63 @@
-import React from "react";
 import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Footer from "./components/Footer";
 import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 function App() {
+
+
+
+const ScrollToSection = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const section = document.querySelector(`#${location.state.scrollTo}`);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+  return null;
+};
+
   return (
-    <div className="font-sans text-gray-900">
-      <Navbar />
-      <div className="pt-16">
-      <Home />
-      <About />
-      <Projects />
+    <Router>
+      <div className="font-sans text-gray-900">
+        <Navbar />
+
+        <div className="pt-16">
+          <Routes>
+            {/* Home pages */}
+            <Route
+              path="/"
+              element={
+                <>
+                  <ScrollToSection />
+                  <Home />
+                  <About />
+                  <Projects />
+                </>
+              }
+            />
+
+            {/* Project detail pages */}
+            <Route path="/projects/:projectId" element={<ProjectDetail />} />
+          </Routes>
+        </div>
+
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </Router>
   );
 }
+
+
 
 export default App;

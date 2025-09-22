@@ -50,10 +50,10 @@ const Home = () => {
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 justify-center md:justify-start">
-            <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer">
+            <a href="https://github.com/CoralieTadjifoue" target="_blank" rel="noreferrer">
               <Github className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
             </a>
-            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/coralie-tadjifoué-896a9b329" target="_blank" rel="noreferrer">
               <Linkedin className="w-6 h-6 text-gray-700 hover:text-blue-600 transition" />
             </a>
           </div>
