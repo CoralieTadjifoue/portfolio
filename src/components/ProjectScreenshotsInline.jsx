@@ -11,23 +11,39 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
   const next = () =>
     setCurrent((c) => (c === screenshots.length - 1 ? 0 : c + 1));
 
+  const currentItem = screenshots[current];
+
   return (
     <div className="mb-8">
-      {/* Main Screenshot */}
+      {/* Main media (image OR video) */}
       <div className="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
-  <motion.img
-    key={current}
-    src={typeof screenshots[current] === "string" ? screenshots[current] : screenshots[current].src}
-    alt={`Screenshot ${current + 1}`}
-    className="w-full object-contain max-h-[600px] mx-auto"
-    initial={{ opacity: 0, x: 50 }}
-    animate={{ opacity: 1, x: 0 }}
-    exit={{ opacity: 0, x: -50 }}
-    transition={{ duration: 0.5 }}
-  />
-</AnimatePresence>
-
+          {currentItem.type === "video" ? (
+            <motion.video
+              key={current}
+              controls
+              className="w-full object-contain max-h-[600px] mx-auto"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+            >
+              <source src={currentItem.src} type="video/mp4" />
+              Your browser does not support the video tag.
+            </motion.video>
+          ) : (
+            <motion.img
+              key={current}
+              src={currentItem.src}
+              alt={`Screenshot ${current + 1}`}
+              className="w-full object-contain max-h-[600px] mx-auto"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
+            />
+          )}
+        </AnimatePresence>
 
         {/* Prev/Next Buttons */}
         <button
@@ -44,25 +60,35 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
         </button>
       </div>
 
-      {/* Screenshot Description */}
-      {screenshots[current].description && (
-        <p className="text-center text-gray-700 mt-3">
-          {screenshots[current].description}
+      {/* Description */}
+      {currentItem.description && (
+        <p className="text-center text-gray-700 mt-3 whitespace-pre-line">
+          {currentItem.description}
         </p>
       )}
 
       {/* Thumbnails */}
       <div className="flex justify-center gap-2 mt-4 flex-wrap">
         {screenshots.map((s, i) => (
-          <img
+          <div
             key={i}
-            src={typeof s === "string" ? s : s.src}
-            alt={`Thumbnail ${i + 1}`}
-            onClick={() => setCurrent(i)}
-            className={`w-20 h-20 object-cover rounded cursor-pointer border-2 ${
+            className={`w-20 h-20 rounded cursor-pointer border-2 flex items-center justify-center ${
               i === current ? "border-blue-600" : "border-transparent"
             }`}
-          />
+            onClick={() => setCurrent(i)}
+          >
+            {s.type === "video" ? (
+              <video className="w-full h-full object-cover rounded">
+                <source src={s.src} type="video/mp4" />
+              </video>
+            ) : (
+              <img
+                src={s.src}
+                alt={`Thumbnail ${i + 1}`}
+                className="w-full h-full object-cover rounded"
+              />
+            )}
+          </div>
         ))}
       </div>
     </div>

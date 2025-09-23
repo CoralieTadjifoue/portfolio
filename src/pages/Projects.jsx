@@ -13,18 +13,21 @@ export const projects = [
     tech: ["C#", ".NET", "WPF", "LINQ", "SonarQube"], 
     github: "#" ,
     screenshots: [
-  { src: "/screenshots/ard_1.png", description: "Dashboard view" },
-  { src: "/screenshots/ard_2.png", description: "Badge validation screen" },
-  { src: "/screenshots/ard_3.png", description: "Reports page" },
-  { src: "/screenshots/ard_4.png", description: "User settings" },
-  { src: "/screenshots/ard_5.png", description: "Analytics dashboard" },
+  { type: "image", src: "/screenshots/ard_1.png", description: "Homepage" },
+  { type: "image", src: "/screenshots/ard_2.png", description: "File import screen" },
+  { type: "image", src: "/screenshots/ard_3.png", description: "Reports page  with a search engine showing badge details: name, first name, status, end date, and ID number" },
+  { type: "image", src: "/screenshots/ard_4.png", description: "Access list management page" },
+  { type: "image", src: "/screenshots/ard_5.png", description: "User settings" },
 ]
   },
   { title: "Drone Delivery App", 
     id:"delivery_app", 
     description: "Kotlin project for medication delivery with drones", 
     tech: ["Kotlin", "Android Studio"],  
-    github: "#" 
+    github: "#",
+    screenshots: [
+  { type: "video", src: "/screenshots/drone_demo.mp4", description: "Demo video of drone delivery app \n The patient account is in purple, the pharmacy account is in green and the delivery person account is in blue" },
+] 
   },
   { title: "Multiplayer Naval Battle Game", 
     id:"naval_battle_game", 

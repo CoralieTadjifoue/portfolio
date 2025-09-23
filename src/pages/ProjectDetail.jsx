@@ -4,7 +4,6 @@ import ProjectScreenshotsInline from "../components/ProjectScreenshotsInline.jsx
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
-  const navigate = useNavigate();
 
   const project = projects.find((p) => p.id === projectId);
 
@@ -16,7 +15,7 @@ const ProjectDetail = () => {
       <h1 className="text-4xl font-bold text-center mb-4">{project.title}</h1>
       <p className="text-gray-700 text-center mb-6">{project.description}</p>
 
-      {/* Inline Screenshots Carousel */}
+      {/* Screenshot/Video  */}
       <ProjectScreenshotsInline screenshots={project.screenshots} />
 
       {/* Tech Stack */}
