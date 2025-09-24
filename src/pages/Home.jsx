@@ -1,10 +1,14 @@
-import React from "react";
+import React from "react"; 
 import profilePic from "../assets/profile.png"; 
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { Github, Linkedin } from "lucide-react";
+import ThumbsUpButton from "../components/ThumbsUp"; 
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -13,7 +17,6 @@ const Home = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-purple-100 animate-pulse-slow" />
 
-      {/* Content */}
       <div className="relative flex flex-col md:flex-row items-center w-full">
         
         {/* Text */}
@@ -23,14 +26,10 @@ const Home = () => {
           transition={{ duration: 0.8 }}
           className="md:w-1/2 text-center md:text-left mb-10 md:mb-0"
         >
-          <h1 className="text-5xl font-bold mb-4">Hi, I'm Coralie</h1>
+          <h1 className="text-5xl font-bold mb-4">{t("home.greeting")}</h1>
           <p className="text-xl text-gray-700 mb-6">
             <Typewriter
-              words={[
-                "5th-year Software Engineering Student",
-                "Aspiring Software/AI Engineer",
-                "Tech Enthusiast"
-              ]}
+              words={t("home.typewriter", { returnObjects: true })}
               loop={0}
               cursor
               cursorStyle="|"
@@ -45,7 +44,7 @@ const Home = () => {
             href="#projects"
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
-            See My Projects
+            {t("home.seeProjects")}
           </motion.a>
 
           {/* Social Icons */}
@@ -59,18 +58,25 @@ const Home = () => {
           </div>
         </motion.div>
 
-        {/* Photo */}
+        {/* Photo + Thumbs-Up */}
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="md:w-1/2 flex justify-center"
+          className="md:w-1/2 flex flex-col items-center"
         >
           <img
             src={profilePic}
             alt="Coralie T."
             className="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg"
           />
+          
+          <div className="mt-10 flex flex-col items-center">
+          <span className="mb-2 text-xl font-semibold text-gray-700 italic">
+            {t("home.thumbsUp")}
+          </span>
+          <ThumbsUpButton />
+        </div>
         </motion.div>
       </div>
     </section>

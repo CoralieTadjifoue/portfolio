@@ -1,0 +1,144 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects"
+  },
+  "home": {
+    "greeting": "Hi, I'm Coralie",
+    "typewriter": [
+      "5th-year Software Engineering Student",
+      "Aspiring Software/AI Engineer",
+      "Tech Enthusiast"
+    ],
+    "seeProjects": "See My Projects",
+    "thumbsUp": "If you like my portfolio, give it a thumbs up!"
+  },
+   "about": {
+    "title": "About Me",
+    "contact": {
+      "email": "📧 coralie.tadjifoue@gmail.com",
+      "phone": "📞 +33 86 06 41 56",
+      "location": "📍 93230 Romainville, France",
+      "objective": "Looking for a 6-month to one year internship in Software Development or Data Science"
+    },
+    "professionalExperienceTitle": "Professional Experience",
+    "professionalExperience": [
+      {
+        "date": "Apr–Aug 2025",
+        "role": "Software Engineer Intern",
+        "company": "SII, France",
+        "details": [
+          "Designed and implemented a C#/.NET tool for badge security management",
+          "Created a user interface, integrated business rules and CI/CD pipelines",
+          "Conducted user needs analysis and delivered technical documentation"
+        ]
+      },
+      {
+        "date": "Jul 2023",
+        "role": "Data Analyst Intern",
+        "company": "Ministry of Armed Forces (ACSIA, France)",
+        "details": [
+          "Maintained and updated SQL databases with focus on security and integrity",
+          "Helped streamline administrative workflows"
+        ]
+      },
+      {
+        "date": "Sept 2024–Jan 2025",
+        "role": "Unpaid mission alongside classes",
+        "company": "MC2i, France",
+        "details": [
+          "Currently developing an interactive executive dashboard (COMEX) integrating external data (market, environment, opinion, demographics)"
+        ]
+      }
+    ],
+    "technicalSkills": {
+      "languages": "Python, R, C, Java, C#, JavaScript, HTML, CSS, SQL",
+      "frameworks": ".NET, Tensorflow, Docker, Jenkins, Swagger, Hadoop, PowerBI",
+      "databases": "SQLite, MySQL, MongoDB, Neo4j, Hive",
+      "environments": "Visual Studio, Git, Linux"
+    },
+    "education":
+    [
+      {
+        "date": "2021–2025",
+        "degree": "Master’s in Computer Engineering",
+        "school": "ESIEA, Ivry-sur-Seine",
+        "details": "Software Engineering, Big Data, DevOps, Machine Learning, Cybersecurity"
+      },
+      {
+        "date": "Jan–May 2024",
+        "degree": "Exchange Semester",
+        "school": "King Mongkut's University of Technology Thonburi, Bangkok, Thailand",
+        "details": "Courses: Machine Learning, Python, Tensorflow, PowerBI | TOEIC 975/990"
+      },
+      {
+        "date": "2018–2020",
+        "degree": "Preparatory Class (MP)",
+        "school": "Lycee Chaptal, Paris",
+        "details": "Math-Physics specialization (intensive courses)"
+      }
+    ],
+    "additionalInfo": {
+      "languages": "French (native), English (fluent), German (basic)",
+      "certifications": "TOEIC 975/990, FreeCodeCamp ML",
+      "softSkills": "Team spirit, Rigor, Organization, Autonomy, Agile",
+      "interests": ["Piano", "Tennis", "Drawing", "Creative Writing"]
+    }
+  },
+    "projects": {
+    "title": "Projects",
+    "viewOnGitHub": "View on GitHub",
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "My personal website built with React and Tailwind",
+      "tech": ["React", "Tailwind", "Supabase"],
+      "github": "https://github.com/CoralieTadjifoue/portfolio"
+    },
+    "ard": {
+      "title": "ARD App",
+      "description": "Security badge management tool in C#/.NET",
+      "tech": ["C#", ".NET", "WPF", "LINQ", "SonarQube"],
+      "screenshots": [
+        { "type": "image", "src": "/screenshots/ard_1.png", "description": "Homepage" },
+        { "type": "image", "src": "/screenshots/ard_2.png", "description": "File import screen" },
+        { "type": "image", "src": "/screenshots/ard_3.png", "description": "Reports page with a search engine showing badge details: name, first name, status, end date, and ID number" },
+        { "type": "image", "src": "/screenshots/ard_4.png", "description": "Access list management page" },
+        { "type": "image", "src": "/screenshots/ard_5.png", "description": "User settings" }
+      ]
+    },
+    "delivery_app": {
+      "title": "Drone Delivery App",
+      "description": "Kotlin project for medication delivery with drones",
+      "tech": ["Kotlin", "Android Studio", "SQL"],
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/drone_demo.mp4", "description": "Demo video of drone delivery app. The patient account is in purple, the pharmacy account is in green and the delivery person account is in blue." }
+      ]
+    },
+    "naval_battle_game": {
+      "title": "Multiplayer Naval Battle Game",
+      "description": "A multiplayer naval battle game with a client-server architecture",
+      "tech": ["Java", "REST API", "Swagger", "Spring Boot"],
+      "github": "https://github.com/CoralieTadjifoue/naval_battle_game",
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/demo_naval_game.mp4", "description": "Demo video of the naval battle game." },
+        { "type": "video", "src": "/screenshots/demo_swagger.mp4", "description": "Swagger API documentation" }
+      ]
+    },
+    "crypto_game": {
+      "title": "Cryptography Game",
+      "description": "Visual/puzzle game inspired by the article Cryptris I from CNRS. It combines ternary encryption with graphical block manipulation to reveal a hidden message.",
+      "tech": ["Python", "Pygame"],
+      "github": "https://github.com/CoralieTadjifoue/cryptography_game",
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/demo_crypto.mp4", "description": "Demo video of my cryptography minigame:\n1. The player chooses the size of the word to be encrypted\n2. The player enters a word\n3. The word is converted into a ternary code: each letter is mapped to a sequence of 4 “trits” (values in {-1,0,+1}) according to a predefined table\n4. A secret key is randomly generated, influencing the form, position, and weight of displayed blocks\n5. The encrypted message is obtained by combining the ternary code with the key (rotations, sums, multiplications, etc.)\n6. The game board shows two block sets: key blocks on top, encrypted message blocks on bottom\n7. The player manipulates blocks (horizontal moves, color change, drop, etc.) to align the encrypted message\n8. End condition is reached when all encrypted elements are reduced to one of the simple states (-1,0,+1)" }
+      ]
+    },
+    "nosql_project": {
+      "title": "No SQL Project",
+      "description": "A web application for exploring and visualizing a graph database using various NoSQL technologies",
+      "tech": ["Python", "MongoDB", "Neo4j", "Streamlit"],
+      "github": "https://github.com/BouallaguiEya/projet-NoSQL"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets"
+  },
+  "home": {
+    "greeting": "Bonjour, je suis Coralie",
+    "typewriter": [
+      "Étudiante ingenieur en 5ème année",
+      "Future ingénieure Software/IA",
+      "Passionnée de technologie"
+    ],
+    "seeProjects": "Voir mes projets",
+    "thumbsUp": "Si vous aimez mon portfolio, donnez-lui un pouce !"
+  },
+   "about": {
+    "title": "À propos de moi",
+    "contact": {
+      "email": "📧 coralie.tadjifoue@gmail.com",
+      "phone": "📞 +33 86 06 41 56",
+      "location": "📍 93230 Romainville, France",
+      "objective": "À la recherche d'un stage de 6 mois à un an en développement logiciel ou Data Science"
+    },
+    "professionalExperienceTitle": "Expérience Professionnelle",
+    "professionalExperience": [
+      {
+        "date": "Avril–Août 2025",
+        "role": "Stagiaire en développement logiciel",
+        "company": "SII, France",
+        "details": [
+          "Conception et implémentation d'un outil C#/.NET pour la gestion des badges de sécurité",
+          "Création d'une interface utilisateur, intégration des règles métier et pipelines CI/CD",
+          "Analyse des besoins utilisateurs et redaction de la documentation technique (User stories, wireframes, etc.)"
+        ]
+      },
+      {
+        "date": "Juillet 2023",
+        "role": "Stagiaire Data Analyst",
+        "company": "Ministère des Armées (ACSIA, France)",
+        "details": [
+          "Maintenance et mise à jour des bases de données avec focus sur la sécurité et l'intégrité",
+          "Contribution à l'optimisation des workflows administratifs"
+        ]
+      },
+      {
+        "date": "Septembre 2024– Janvier 2025",
+        "role": "Mission non rémunérée parallèlement aux cours",
+        "company": "MC2i, France",
+        "details": [
+          "Développement d'un tableau de bord interactif COMEX intégrant des données externes (marché, environnement, opinion, démographie)"
+        ]
+      }
+    ],
+    "technicalSkillsTitle": "Compétences Techniques",
+    "technicalSkills": {
+      "languages": "Python, R, C, Java, C#, JavaScript, HTML, CSS, SQL",
+      "frameworks": ".NET, Tensorflow, Docker, Jenkins, Swagger, Hadoop, PowerBI",
+      "databases": "SQLite, MySQL, MongoDB, Neo4j, Hive",
+      "environments": "Visual Studio, Git, Linux"
+    },
+    "education": [
+      {
+        "date": "2021–2025",
+        "degree": "Cycle Ingenieur - Majeure Software Engineering",
+        "school": "ESIEA, Ivry-sur-Seine",
+        "details": "Software Engineering, DevOps, Big Data, Machine Learning, Cybersécurité"
+      },
+      {
+        "date": "Janvier–Mai 2024",
+        "degree": "Semestre d'échange",
+        "school": "King Mongkut's University of Technology Thonburi, Bangkok, Thaïlande",
+        "details": "Cours : Machine Learning, Python, Tensorflow, PowerBI | TOEIC 975/990"
+      },
+      {
+        "date": "2018–2020",
+        "degree": "Classe préparatoire (MP)",
+        "school": "Lycée Chaptal, Paris",
+        "details": "Spécialisation Maths-Physique (cours intensifs)"
+      }
+    ],
+    "additionalInfoTitle": "Informations Complémentaires",
+    "additionalInfo": {
+      "languages": "Français (natif), Anglais (courant), Allemand (notions)",
+      "certifications": "TOEIC 975/990, FreeCodeCamp ML",
+      "softSkills": "Esprit d'équipe, Rigueur, Organisation, Autonomie, Agile",
+      "interests": ["Piano", "Tennis", "Dessin", "Écriture créative"]
+    }
+  },
+  "projects":
+   {
+    "title": "Projets",
+    "viewOnGitHub": "Voir sur GitHub",
+    "portfolio": {
+      "title": "Portfolio",
+      "description": "Mon site personnel construit avec React et Tailwind",
+      "tech": ["React", "Tailwind", "Supabase"],
+      "github": "https://github.com/CoralieTadjifoue/portfolio"
+    },
+    "ard": {
+      "title": "Application ARD",
+      "description": "Outil de gestion des badges de sécurité en C#/.NET",
+      "tech": ["C#", ".NET", "WPF", "LINQ", "SonarQube"],
+      "screenshots": [
+        { "type": "image", "src": "/screenshots/ard_1.png", "description": "Page d'accueil" },
+        { "type": "image", "src": "/screenshots/ard_2.png", "description": "Écran d'importation de fichiers" },
+        { "type": "image", "src": "/screenshots/ard_3.png", "description": "Page des rapports avec moteur de recherche intégré affichant : nom, prénom, statut, date de fin et numéro d'identification de chaque badge" },
+        { "type": "image", "src": "/screenshots/ard_4.png", "description": "Page de gestion des listes d'accès" },
+        { "type": "image", "src": "/screenshots/ard_5.png", "description": "Paramètres utilisateur" }
+      ]
+    },
+    "delivery_app": {
+      "title": "Application de livraison par drone",
+      "description": "Projet Kotlin pour la livraison de médicaments par drones",
+      "tech": ["Kotlin", "Android Studio", "SQL"],
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/drone_demo.mp4", "description": "Vidéo de démonstration de l'application. Le compte patient est en violet, le compte pharmacie en vert et le livreur en bleu." }
+      ]
+    },
+    "naval_battle_game": {
+      "title": "Jeu de bataille navale multijoueur",
+      "description": "Jeu multijoueur de bataille navale avec architecture client-serveur",
+      "tech": ["Java", "REST API", "Swagger", "Spring Boot"],
+      "github": "https://github.com/CoralieTadjifoue/naval_battle_game",
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/demo_naval_game.mp4", "description": "Vidéo de démonstration du jeu de bataille navale." },
+        { "type": "video", "src": "/screenshots/demo_swagger.mp4", "description": "Documentation Swagger de l'API" }
+      ]
+    },
+    "crypto_game": {
+      "title": "Jeu de cryptographie",
+      "description": "Jeu visuel/puzzle inspiré de l'article Cryptris I du CNRS. Il combine un chiffrement ternaire avec manipulation de blocs graphiques pour révéler un message caché.",
+      "tech": ["Python", "Pygame"],
+      "github": "https://github.com/CoralieTadjifoue/cryptography_game",
+      "screenshots": [
+        { "type": "video", "src": "/screenshots/demo_crypto.mp4", "description": "Vidéo de démonstration de mon mini-jeu de cryptographie:\n1. Le joueur choisit la taille du mot à chiffrer\n2. Le joueur saisit un mot\n3. Le mot est converti en code ternaire : chaque lettre est mappée sur 4 “trits” ({-1,0,+1}) selon une table\n4. Une clé secrète est générée aléatoirement et influence forme, position et poids des blocs affichés\n5. Le message chiffré est obtenu en combinant le code ternaire et la clé (rotations, sommes, multiplications, etc.)\n6. Le plateau montre deux ensembles de blocs : blocs de clé en haut, message chiffré en bas\n7. Le joueur manipule les blocs (déplacement horizontal, changement de couleur, chute, etc.) pour aligner le message chiffré\n8. La fin est atteinte lorsque tous les éléments chiffrés sont réduits à un état simple (-1,0,+1)" }
+      ]
+    },
+    "nosql_project": {
+      "title": "Projet NoSQL",
+      "description": "Application web pour explorer et visualiser une base de graphes utilisant différentes technologies NoSQL",
+      "tech": ["Python", "MongoDB", "Neo4j", "Streamlit"],
+      "github": "https://github.com/BouallaguiEya/projet-NoSQL"
+    }
+  }
+}
