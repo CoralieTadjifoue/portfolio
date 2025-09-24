@@ -91,7 +91,7 @@
     "viewOnGitHub": "View on GitHub",
     "portfolio": {
       "title": "Portfolio",
-      "description": "My personal website built with React and Tailwind",
+      "description": "My personal website built with React and Tailwind. Supabase is used to keep track of the number of thumbs up received :)",
       "tech": ["React", "Tailwind", "Supabase"],
       "github": "https://github.com/CoralieTadjifoue/portfolio"
     },

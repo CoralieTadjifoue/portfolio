@@ -93,7 +93,7 @@
     "viewOnGitHub": "Voir sur GitHub",
     "portfolio": {
       "title": "Portfolio",
-      "description": "Mon site personnel construit avec React et Tailwind",
+      "description": "Mon site personnel construit avec React et Tailwind. Supabase est utilisé pour suivre le nombre de pouces reçus :)",
       "tech": ["React", "Tailwind", "Supabase"],
       "github": "https://github.com/CoralieTadjifoue/portfolio"
     },
