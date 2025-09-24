@@ -69,7 +69,7 @@ export default function About() {
           </div>
           <div>
             <p className="font-semibold">2018–2020</p>
-            <p>Preparatory Class (MP) – <span className="font-semibold">Paris</span></p>
+            <p>Preparatory Class (MP) – <span className="font-semibold">Lycee Chaptal, Paris</span></p>
             <p className="text-sm text-gray-600">Math-Physics specialization (intensive courses)</p>
           </div>
         </div>

@@ -15,7 +15,7 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
 
   return (
     <div className="mb-8">
-      {/* Main media (image OR video) */}
+      {/* image or video) */}
       <div className="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
           {currentItem.type === "video" ? (
