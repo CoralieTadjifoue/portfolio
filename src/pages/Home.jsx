@@ -10,15 +10,11 @@ import { useLocation, useNavigate } from "react-router-dom";
 const Home = () => {
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate();
+
 
   const handleClick = (id) => {
-    if (location.pathname !== "/") {
-      navigate("/", { state: { scrollTo: id } });
-    } else {
       const section = document.querySelector(`#${id}`);
       if (section) section.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
