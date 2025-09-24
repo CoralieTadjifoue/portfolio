@@ -4,60 +4,52 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import ProjectDetail from "./pages/ProjectDetail";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 function App() {
+  const ScrollToSection = () => {
+    const location = useLocation();
 
-
-
-const ScrollToSection = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.state?.scrollTo) {
-      const section = document.querySelector(`#${location.state.scrollTo}`);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
+    useEffect(() => {
+      if (location.state?.scrollTo) {
+        const section = document.querySelector(`#${location.state.scrollTo}`);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
       }
-    }
-  }, [location]);
+    }, [location]);
 
-  return null;
-};
+    return null;
+  };
 
   return (
-    <Router>
-      <div className="font-sans text-gray-900">
-        <Navbar />
+    <div className="font-sans text-gray-900">
+      <Navbar />
 
-        <div className="pt-16">
-          <Routes>
-            {/* Home pages */}
-            <Route
-              path="/"
-              element={
-                <>
-                  <ScrollToSection />
-                  <Home />
-                  <About />
-                  <Projects />
-                </>
-              }
-            />
+      <div className="pt-16">
+        <Routes>
+          {/* Home pages */}
+          <Route
+            path="/"
+            element={
+              <>
+                <ScrollToSection />
+                <Home />
+                <About />
+                <Projects />
+              </>
+            }
+          />
 
-            {/* Project detail pages */}
-            <Route path="/projects/:projectId" element={<ProjectDetail />} />
-          </Routes>
-        </div>
-
-        <Footer />
+          {/* Project detail pages */}
+          <Route path="/projects/:projectId" element={<ProjectDetail />} />
+        </Routes>
       </div>
-    </Router>
+
+      <Footer />
+    </div>
   );
 }
-
-
 
 export default App;
