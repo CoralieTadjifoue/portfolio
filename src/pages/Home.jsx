@@ -5,9 +5,21 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Github, Linkedin } from "lucide-react";
 import ThumbsUpButton from "../components/ThumbsUp"; 
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleClick = (id) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: id } });
+    } else {
+      const section = document.querySelector(`#${id}`);
+      if (section) section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section
@@ -38,14 +50,14 @@ const Home = () => {
               delaySpeed={1500}
             />
           </p>
-          <motion.a
+          <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#projects"
+            onClick={() => handleClick("projects")}
             className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
           >
             {t("home.seeProjects")}
-          </motion.a>
+          </motion.button>
 
           {/* Social Icons */}
           <div className="flex gap-4 mt-6 justify-center md:justify-start">
