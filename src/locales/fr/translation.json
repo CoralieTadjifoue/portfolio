@@ -107,11 +107,11 @@
       "description": "Outil de gestion des badges de sécurité en C#/.NET",
       "tech": ["C#", ".NET", "WPF", "LINQ", "SonarQube"],
       "screenshots": [
-        { "type": "image", "src": "screenshots/ard_1.png", "description": "Page d'accueil" },
-        { "type": "image", "src": "screenshots/ard_2.png", "description": "Écran d'importation de fichiers" },
-        { "type": "image", "src": "screenshots/ard_3.png", "description": "Page des rapports avec moteur de recherche intégré affichant : nom, prénom, statut, date de fin et numéro d'identification de chaque badge" },
-        { "type": "image", "src": "screenshots/ard_4.png", "description": "Page de gestion des listes d'accès" },
-        { "type": "image", "src": "screenshots/ard_5.png", "description": "Paramètres utilisateur" }
+        { "type": "image", "src": "/screenshots/ard_1.png", "description": "Page d'accueil" },
+        { "type": "image", "src": "/screenshots/ard_2.png", "description": "Écran d'importation de fichiers" },
+        { "type": "image", "src": "/screenshots/ard_3.png", "description": "Page des rapports avec moteur de recherche intégré affichant : nom, prénom, statut, date de fin et numéro d'identification de chaque badge" },
+        { "type": "image", "src": "/screenshots/ard_4.png", "description": "Page de gestion des listes d'accès" },
+        { "type": "image", "src": "/screenshots/ard_5.png", "description": "Paramètres utilisateur" }
       ]
     },
     "delivery_app": {
@@ -128,8 +128,8 @@
       "tech": ["Java", "REST API", "Swagger", "Spring Boot"],
       "github": "https://github.com/CoralieTadjifoue/naval_battle_game",
       "screenshots": [
-        { "type": "video", "src": "screenshots/demo_naval_game.mp4", "description": "Vidéo de démonstration du jeu de bataille navale." },
-        { "type": "video", "src": "screenshots/demo_swagger.mp4", "description": "Documentation Swagger de l'API" }
+        { "type": "video", "src": "/screenshots/demo_naval_game.mp4", "description": "Vidéo de démonstration du jeu de bataille navale." },
+        { "type": "video", "src": "/screenshots/demo_swagger.mp4", "description": "Documentation Swagger de l'API" }
       ]
     },
     "crypto_game": {
@@ -138,7 +138,7 @@
       "tech": ["Python", "Pygame"],
       "github": "https://github.com/CoralieTadjifoue/cryptography_game",
       "screenshots": [
-        { "type": "video", "src": "screenshots/demo_crypto.mp4", "description": "Vidéo de démonstration de mon mini-jeu de cryptographie:\n1. Le joueur choisit la taille du mot à chiffrer\n2. Le joueur saisit un mot\n3. Le mot est converti en code ternaire : chaque lettre est mappée sur 4 “trits” ({-1,0,+1}) selon une table\n4. Une clé secrète est générée aléatoirement et influence forme, position et poids des blocs affichés\n5. Le message chiffré est obtenu en combinant le code ternaire et la clé (rotations, sommes, multiplications, etc.)\n6. Le plateau montre deux ensembles de blocs : blocs de clé en haut, message chiffré en bas\n7. Le joueur manipule les blocs (déplacement horizontal, changement de couleur, chute, etc.) pour aligner le message chiffré\n8. La fin est atteinte lorsque tous les éléments chiffrés sont réduits à un état simple (-1,0,+1)" }
+        { "type": "video", "src": "/screenshots/demo_crypto.mp4", "description": "Vidéo de démonstration de mon mini-jeu de cryptographie:\n1. Le joueur choisit la taille du mot à chiffrer\n2. Le joueur saisit un mot\n3. Le mot est converti en code ternaire : chaque lettre est mappée sur 4 “trits” ({-1,0,+1}) selon une table\n4. Une clé secrète est générée aléatoirement et influence forme, position et poids des blocs affichés\n5. Le message chiffré est obtenu en combinant le code ternaire et la clé (rotations, sommes, multiplications, etc.)\n6. Le plateau montre deux ensembles de blocs : blocs de clé en haut, message chiffré en bas\n7. Le joueur manipule les blocs (déplacement horizontal, changement de couleur, chute, etc.) pour aligner le message chiffré\n8. La fin est atteinte lorsque tous les éléments chiffrés sont réduits à un état simple (-1,0,+1)" }
       ]
     },
     "nosql_project": {
