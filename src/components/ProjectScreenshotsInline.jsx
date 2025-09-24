@@ -13,9 +13,11 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
 
   const currentItem = screenshots[current];
 
+  const getSrc = (src) => process.env.PUBLIC_URL + src;
+
   return (
     <div className="mb-8">
-      {/* image or video) */}
+      {/* image or video */}
       <div className="relative rounded-lg overflow-hidden shadow-lg max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
           {currentItem.type === "video" ? (
@@ -28,13 +30,13 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.5 }}
             >
-              <source src={currentItem.src} type="video/mp4" />
+              <source src={getSrc(currentItem.src)} type="video/mp4" />
               Your browser does not support the video tag.
             </motion.video>
           ) : (
             <motion.img
               key={current}
-              src={currentItem.src}
+              src={getSrc(currentItem.src)}
               alt={`Screenshot ${current + 1}`}
               className="w-full object-contain max-h-[600px] mx-auto"
               initial={{ opacity: 0, x: 50 }}
@@ -79,11 +81,11 @@ const ProjectScreenshotsInline = ({ screenshots }) => {
           >
             {s.type === "video" ? (
               <video className="w-full h-full object-cover rounded">
-                <source src={s.src} type="video/mp4" />
+                <source src={getSrc(s.src)} type="video/mp4" />
               </video>
             ) : (
               <img
-                src={s.src}
+                src={getSrc(s.src)}
                 alt={`Thumbnail ${i + 1}`}
                 className="w-full h-full object-cover rounded"
               />
