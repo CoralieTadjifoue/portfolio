@@ -13,9 +13,12 @@ const Home = () => {
 
 
   const handleClick = (id) => {
-      const section = document.querySelector(`#${id}`);
-      if (section) section.scrollIntoView({ behavior: "smooth" });
-  };
+  const section = document.getElementById(id);
+  if (section) {
+    const y = section.getBoundingClientRect().top + window.pageYOffset - 80; 
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+};
 
   return (
     <section

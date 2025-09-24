@@ -14,6 +14,11 @@
     "seeProjects": "Voir mes projets",
     "thumbsUp": "Si vous aimez mon portfolio, donnez-lui un pouce !"
   },
+  "thumbsUp": {
+    "loading": "Chargement...",
+    "limitReached": "Merci beaucoup pour les pouces !",
+    "remaining": "{{remaining}} pouces restant aujourd'hui"
+  },
    "about": {
     "title": "À propos de moi",
     "contact": {

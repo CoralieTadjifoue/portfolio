@@ -14,6 +14,11 @@
     "seeProjects": "See My Projects",
     "thumbsUp": "If you like my portfolio, give it a thumbs up!"
   },
+  "thumbsUp": {
+    "loading": "Loading...",
+    "limitReached": "Thank you so much for the tumbs-up !",
+    "remaining": "{{remaining}} thumbs-up remaining today"
+  },
    "about": {
     "title": "About Me",
     "contact": {
