@@ -2,7 +2,8 @@
   "navbar": {
     "home": "Accueil",
     "about": "À propos",
-    "projects": "Projets"
+    "projects": "Projets",
+    "language": "Langue"
   },
   "home": {
     "greeting": "Bonjour, je suis Coralie",

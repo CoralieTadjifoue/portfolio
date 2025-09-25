@@ -2,7 +2,8 @@
   "navbar": {
     "home": "Home",
     "about": "About",
-    "projects": "Projects"
+    "projects": "Projects",
+    "language": "Language"
   },
   "home": {
     "greeting": "Hi, I'm Coralie",
