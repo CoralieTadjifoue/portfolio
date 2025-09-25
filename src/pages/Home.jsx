@@ -5,11 +5,10 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { Github, Linkedin } from "lucide-react";
 import ThumbsUpButton from "../components/ThumbsUp"; 
-import { useLocation, useNavigate } from "react-router-dom";
+
 
 const Home = () => {
   const { t } = useTranslation();
-  const location = useLocation();
 
 
   const handleClick = (id) => {
@@ -83,7 +82,7 @@ const Home = () => {
           />
           
           <div className="mt-10 flex flex-col items-center">
-          <span className="mb-2 text-xl font-semibold text-gray-700 italic">
+          <span className="mb-2 text-xl font-semibold text-center text-gray-700 italic">
             {t("home.thumbsUp")}
           </span>
           <ThumbsUpButton />
