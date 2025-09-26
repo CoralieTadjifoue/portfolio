@@ -26,7 +26,8 @@
       "email": "📧 coralie.tadjifoue@gmail.com",
       "phone": "📞 +33 86 06 41 56",
       "location": "📍 93230 Romainville, France",
-      "objective": "À la recherche d'un stage de 6 mois à un an en développement logiciel ou Data Science"
+      "objective": "À la recherche d'un stage de 6 mois à un an en développement logiciel ou Data Science",
+      "nationality": "Française"
     },
     "professionalExperienceTitle": "Expérience Professionnelle",
     "professionalExperience": [
@@ -69,7 +70,7 @@
       {
         "date": "2021–2025",
         "degree": "Cycle Ingenieur - Majeure Software Engineering",
-        "school": "ESIEA, Ivry-sur-Seine",
+        "school": "ESIEA, Ivry-sur-Seine, France",
         "details": "Software Engineering, DevOps, Big Data, Machine Learning, Cybersécurité"
       },
       {
@@ -83,12 +84,18 @@
         "degree": "Classe préparatoire (MP)",
         "school": "Lycée Chaptal, Paris",
         "details": "Spécialisation Maths-Physique (cours intensifs)"
+      },
+      {
+        "date": "2015–2017",
+        "degree": "Baccalauréat Scientifique",
+        "school": "Lycée Saint-Michel de Picpus, Paris",
+        "details": "Spécialisation Mathématiques | Mention Bien"
       }
     ],
     "additionalInfoTitle": "Informations Complémentaires",
     "additionalInfo": {
       "languages": "Français (natif), Anglais (courant), Allemand (notions)",
-      "certifications": "TOEIC 975/990, FreeCodeCamp ML",
+      "certifications": "TOEIC 975/990, FreeCodeCamp Data Analysis",
       "softSkills": "Esprit d'équipe, Rigueur, Organisation, Autonomie, Agile",
       "interests": ["Piano", "Tennis", "Dessin", "Écriture créative"]
     }

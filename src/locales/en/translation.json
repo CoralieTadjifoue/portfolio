@@ -26,7 +26,8 @@
       "email": "📧 coralie.tadjifoue@gmail.com",
       "phone": "📞 +33 86 06 41 56",
       "location": "📍 93230 Romainville, France",
-      "objective": "Looking for a 6-month to one year internship in Software Development or Data Science"
+      "objective": "Looking for a 6-month to one year internship in Software Development or Data Science",
+      "nationality": "French"
     },
     "professionalExperienceTitle": "Professional Experience",
     "professionalExperience": [
@@ -69,7 +70,7 @@
       {
         "date": "2021–2025",
         "degree": "Master’s in Computer Engineering",
-        "school": "ESIEA, Ivry-sur-Seine",
+        "school": "ESIEA, Ivry-sur-Seine, France",
         "details": "Software Engineering, Big Data, DevOps, Machine Learning, Cybersecurity"
       },
       {
@@ -83,11 +84,17 @@
         "degree": "Preparatory Class (MP)",
         "school": "Lycee Chaptal, Paris",
         "details": "Math-Physics specialization (intensive courses)"
+      },
+      {
+        "date": "2015–2017",
+        "degree": "High School Diploma (Scientific)",
+        "school": "Lycee Saint-Michel de Picpus, Paris",
+        "details": "Mathematics specialization | Mention Bien (Good Honors)"
       }
     ],
     "additionalInfo": {
       "languages": "French (native), English (fluent), German (basic)",
-      "certifications": "TOEIC 975/990, FreeCodeCamp ML",
+      "certifications": "TOEIC 975/990, FreeCodeCamp Data Analysis",
       "softSkills": "Team spirit, Rigor, Organization, Autonomy, Agile",
       "interests": ["Piano", "Tennis", "Drawing", "Creative Writing"]
     }

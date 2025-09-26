@@ -1,14 +1,19 @@
 import SectionCard from "../components/SectionCard";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 export default function About() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const contact = t("about.contact", { returnObjects: true });
   const professionalExperience = t("about.professionalExperience", { returnObjects: true });
   const technicalSkills = t("about.technicalSkills", { returnObjects: true });
   const education = t("about.education", { returnObjects: true });
   const additionalInfo = t("about.additionalInfo", { returnObjects: true });
+
+  const resumeLink = i18n.language === "fr" 
+    ? "/resume/Coralie_Tadjifoue_CV_FR.pdf" 
+    : "/resume/Coralie_Tadjifoue_CV_EN.pdf";
 
   return (
     <section id="about" className="bg-white">
@@ -20,7 +25,19 @@ export default function About() {
           <p>{contact.email}</p>
           <p>{contact.phone}</p>
           <p>{contact.location}</p>
+          <p>{contact.nationality}</p>
           <p className="mt-2 font-semibold">{contact.objective}</p>
+
+        {/* Download Resume Button */}
+          <motion.a
+            href={resumeLink}
+            download
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="mt-6 inline-block bg-blue-500/50 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+          >
+            {i18n.language === "fr" ? "Télécharger mon CV" : "Download my Resume"}
+          </motion.a>
         </div>
 
         {/* Professional Experience */}
