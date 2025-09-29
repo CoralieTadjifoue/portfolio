@@ -10,10 +10,12 @@ export default function About() {
   const technicalSkills = t("about.technicalSkills", { returnObjects: true });
   const education = t("about.education", { returnObjects: true });
   const additionalInfo = t("about.additionalInfo", { returnObjects: true });
+ 
 
-  const resumeLink = i18n.language === "fr" 
-    ? "/resume/Coralie_Tadjifoue_CV_FR.pdf" 
-    : "/resume/Coralie_Tadjifoue_CV_EN.pdf";
+  const resumeLink =
+  i18n.language === "fr"
+    ? `${process.env.PUBLIC_URL}/resume/Coralie_Tadjifoue_CV_FR.pdf`
+    : `${process.env.PUBLIC_URL}/resume/Coralie_Tadjifoue_CV_EN.pdf`;
 
   return (
     <section id="about" className="bg-white">
